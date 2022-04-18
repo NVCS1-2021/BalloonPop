@@ -5,6 +5,7 @@ ArrayList<Balloon> balloons = new ArrayList<Balloon>();
 
 public void setup() {
   size(600,600);
+  spawnBalloons();
 }
 
 public void draw() {
@@ -20,7 +21,11 @@ public void draw() {
 
 private void spawnBalloons() {
   for (int i = 0; i < 10; i++) {
-    Balloon newB = new Balloon();
+    Balloon newB = new RedBalloon((int)(Math.random()*width),(int)(Math.random()*height));
+    balloons.add(newB);
+  }
+  for (int i = 0; i < 10; i++) {
+    Balloon newB = new BlueBalloon((int)(Math.random()*width),(int)(Math.random()*height));
     balloons.add(newB);
   }
 }

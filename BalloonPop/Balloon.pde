@@ -13,4 +13,9 @@ public class Balloon {
   public void move() {
 
   }
+  
+  public void show() {
+    fill(c);
+    circle(pos.x,pos.y,SIZE);
+  }
 }
