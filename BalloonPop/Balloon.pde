@@ -20,4 +20,12 @@ public class Balloon {
     fill(c);
     circle(pos.x,pos.y,SIZE);
   }
+  
+  public PVector getVel() {
+    return vel;
+  }
+  
+  public PVector getPos() {
+    return pos; 
+  }
 }
