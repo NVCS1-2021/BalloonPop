@@ -11,7 +11,9 @@ public class Balloon {
   }
 
   public void move() {
-
+    vel.x = (float)Math.random() * 10 - 5;
+    vel.y = (float)Math.random() * 10 - 5;
+    pos.add(vel);
   }
   
   public void show() {

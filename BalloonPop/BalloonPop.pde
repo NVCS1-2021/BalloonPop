@@ -13,6 +13,7 @@ public void draw() {
   //show all balloons
   for (int i = 0; i < balloons.size(); i++) {
      balloons.get(i).show();
+     balloons.get(i).move();
   }
   //for (Balloon b : balloons) {
   //  b.show();
